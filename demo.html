@@ -1,0 +1,98 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+	<meta charset="utf-8">
+	<title>Tutorials</title>
+
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/jquery.ui.js"></script>
+
+	<script type="text/javascript" src="jquery.timeliner.js"></script>
+    <link href='jquery.timeliner.css' rel='stylesheet' type='text/css'>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+		    var txt='<?xml version="1.0" encoding="utf-8"?>';
+		    txt = txt + "<events>";
+		    txt = txt + "   <event>";
+		    txt = txt + "       <title>Event A</title>";
+		    txt = txt + "       <date>01-04-2013</date>";
+		    txt = txt + "       <description>Text goes here with some explanations</description>";
+		    txt = txt + "       <imageurl></imageurl>";
+		    txt = txt + "       <url></url>";
+		    txt = txt + "   </event>";
+		    txt = txt + "   <event>";
+		    txt = txt + "       <title>Event ADDDS</title>";
+		    txt = txt + "       <date>04-06-2013</date>";
+		    txt = txt + "       <description>Text goes here with some explanations</description>";
+		    txt = txt + "       <imageurl></imageurl>";
+		    txt = txt + "       <url></url>";
+		    txt = txt + "   </event>";
+		    txt = txt + "   <event>";
+		    txt = txt + "       <title>Second Event</title>";
+		    txt = txt + "       <date>05-08-2013</date>";
+		    txt = txt + "       <description>Text goes here with some explanations</description>";
+		    txt = txt + "       <imageurl></imageurl>";
+		    txt = txt + "       <url></url>";
+		    txt = txt + "   </event>";
+		    txt = txt + "   <event>";
+		    txt = txt + "       <title>HELLO WORLD Event</title>";
+		    txt = txt + "       <date>07-21-2013</date>";
+		    txt = txt + "       <description>some text here</description>";
+		    txt = txt + "       <imageurl></imageurl>";
+		    txt = txt + "       <url></url>";
+		    txt = txt + "   </event>";
+		    txt = txt + "</events>";
+
+
+			$('#Timeliner').timeliner({
+				nbrLines: 2,
+				xmlcontent: txt,
+				colors: [
+					'#142A06',
+					'#437E4C',
+				],
+				globalHeight: 100,
+				globalWitdh: 800,
+				globalBgcolor: "#23436E",
+				globalContainerBgcolor: "#FFF",
+				tlBgcolor: "#B08F42",
+				tlHeight: 20,
+				itemWidth: 20,
+				itemHeight: 20,
+				itemRadius: 8,
+				itemRadiusborder: 3,
+				itemcolor: '#FFF',
+				itemBgcolor: '#276686',
+				slotBgcolor: '#FFF',
+				titleMsg: 'TimeLine Title',
+				titlePosition: 'left',
+				titleMargin: 5,
+				titleFontSize: 30,
+				titleFontColor: '#24D3FF',
+				annimation: false,
+				annimationInterval: 1000,
+				annimationSpeed: 'fast'
+			});
+
+
+		});
+	</script>	
+
+
+ </head>
+ <body>
+	<br>
+
+	<div id="Timeliner"></div>
+	<br>
+	<br>
+
+	  
+	<br>
+	<A href="code.html">Code</A>,<A href="fullcode.html">Code Complet</A>,<A href="../index.html">Tutorials</A>,
+	
+ </body>
+ </html>

@@ -1,0 +1,78 @@
+
+
+div.OverBlock { 
+    opacity:0.6;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+	/* Firefox */
+	-moz-transition: all 0.4s ease;
+	/* WebKit */
+	-webkit-transition: all 0.4s ease;
+	/* Opera */
+	-o-transition: all 0.4s ease;
+	/* Standard */
+	transition: all 0.4s ease;
+}
+  		
+div.OverBlock:hover {
+	opacity: 1;
+  			
+	/* Firefox */
+	-moz-transform: scale(2) rotate(0deg) translate(0px);
+	/* WebKit */
+	-webkit-transform: scale(2) rotate(0deg) translate(0px);
+	/* Opera */
+	-o-transform: scale(2) rotate(0deg) translate(0px);
+	/* Standard */
+	transform: scale(2) rotate(0deg) translate(0px);
+	z-index: 1000;  			
+}                
+   
+
+
+.tooltip {
+	border-bottom: 1px dotted #000000; color: #000000; outline: none;
+	cursor: help; text-decoration: none;
+	position: relative;
+    text-align:left;
+}
+.tooltip span {
+	margin-left: -999em;
+	position: absolute;
+    text-align:left;
+}
+.tooltip:hover span {
+	border-radius: 5px 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; 
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1); -moz-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+	font-family: Calibri, Tahoma, Geneva, sans-serif;
+	position: absolute; left: 1em; top: 2em; z-index: 99;
+	margin-left: 0; width: 250px;
+    text-align:left;
+}
+.tooltip:hover img {
+	border: 0; margin: -10px 0 0 -55px;
+	float: left; position: absolute;
+}
+.tooltip:hover em {
+	font-family: Candara, Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: bold;
+	display: block; padding: 0.2em 0 0.6em 0;
+    text-align:left;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic {background: #FFFFAA; border: 1px solid #FFAD33; }
+.critical { background: #FFCCAA; border: 1px solid #FF3334;	}
+.help { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.info { background: #9FDAEE; border: 1px solid #2BB0D7;	}
+.warning { background: #FFFFAA; border: 1px solid #FFAD33; }
+
+
+.bgradiant
+{
+    background-color: grey;
+    background-image: -webkit-gradient(radial, 50% 50, 1, 50% 50, 400, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0.7)));
+    background-repeat: no-repeat;
+}
+
+     
